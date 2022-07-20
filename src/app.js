@@ -11,6 +11,7 @@ const app = express();
 const publicPath=path.join(__dirname,"../public");
 const viewsPath = path.join(__dirname,"../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
+const port = process.env.PORT|| 3000
 
 hbs.registerPartials(partialsPath);
 app.set("view engine","hbs")
@@ -93,8 +94,8 @@ app.get("*",(req,res)=>{
         errmessage:"page not found"
     });
 })
-app.listen(3000,()=>{
-    console.log("server is up on 3000");
+app.listen(port,()=>{
+    console.log("server is up on "+port);
 })
 
 // app.get('/help',(req,resp)=>{
