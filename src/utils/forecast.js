@@ -8,7 +8,7 @@ const forecast=(latitude,longitude,callback)=>{
             callback("invalid lattiude and or longitude",undefined)
         }else{
             value=body.current;
-            callback(undefined,value.weather_descriptions[0]+" .the current temprature is "+value.temperature+" but it feels like "+ value.feelslike+ ".\r\n It has a precipitation percent of "+ value.precip + "% and uv index of "+value.uv_index +".")
+            callback(undefined,value.weather_descriptions[0]+" .the current temprature is "+value.temperature+" but it feels like "+ value.feelslike+ ".\r\n It has a precipitation chance of "+ value.precip + "% and uv index of "+value.uv_index +".")
         }
     });
 }
