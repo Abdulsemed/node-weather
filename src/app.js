@@ -98,6 +98,10 @@ app.listen(port,()=>{
     console.log("server is up on "+port);
 })
 
+// ********* run command ***********
+//  npm uninstall nodemon " then" npm install nodemon --save-dev
+
+
 // app.get('/help',(req,resp)=>{
 //     resp.send([{
 //         name:"bebe",
